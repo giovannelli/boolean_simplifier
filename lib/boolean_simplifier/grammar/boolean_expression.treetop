@@ -57,7 +57,7 @@ grammar BooleanExpression
   end
 
   rule variable
-    [\p{L}0-9_]+ {
+    [\p{L}0-9_#@*'-]+ {
       def to_expression
         text_value
       end
